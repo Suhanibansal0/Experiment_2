@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #2d3436;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #e67e22; /* Sunset Orange */
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+    .nav-menu a {
+        text-decoration: none;
+        color: #2d3436;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+        .nav-menu a:hover {
+            color: #e67e22;
+        }
+
+.hero {
+    background: linear-gradient(135deg, #fff5e6 0%, #ffdfba 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #2d3436;
+}
+
+    .hero-content h1 span {
+        color: #e67e22;
+    }
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #636e72;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #e67e22;
+    color: white;
+    padding: 14px 35px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+}
+
+    .btn:hover {
+        background: #d35400;
+        transform: translateY(-2px);
+    }
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+    section h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+
+.about-wrapper {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.skills {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+    .skills span {
+        background: #fef4ea;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-size: 14px;
+        color: #e67e22;
+        font-weight: bold;
+        border: 1px solid #ffdfba;
+    }
+
+.avatar {
+    width: 280px;
+    height: 280px;
+    background: white;
+    border-radius: 30px; /* Rounded Square for Blender feel */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+.projects {
+    background: #fdfdfd;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    border-bottom: 4px solid #e67e22;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+    .project-card:hover {
+        transform: translateY(-10px);
+    }
+
+footer {
+    background: #2d3436;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-wrapper {
+        flex-direction: column-reverse;
+    }
+}
+
+.avatar-img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 4px solid white;
+}
